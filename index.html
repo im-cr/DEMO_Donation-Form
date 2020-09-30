@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donation Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__container">
+
+			<label class="label__progress" for="donor__progress">$<span class="donor-goal">5000</span> still needed to fund this project <span class="marker"></span></label>
+			<progress id="donor__progress" value="" max="5000"></progress>
+			
+			<h1 class="title__form">Only <span class="donor-days"></span> days left to fund this project!</h1>
+			<p class="donor-lead">Don't be shy. Be the first to donate!</p>
+			<p class="donor-cta">Join the <span class="donor-count"> </span> other donor(s) who have already supported this project.</p>
+			<div class="donor-error"></div>
+			<form id="donorForm">
+				<input type="text" class="donation__input" id="donation" placeholder="25" required/>
+				<button type="submit" class="btn submit">Give Now</button>
+			</form>
+		</div>	
+	</div>
+	<div class="modal">
+		<a href="#">
+			<img src="https://media.giphy.com/media/lMameLIF8voLu8HxWV/giphy.gif" alt="celebration" />
+		</a>
+	</div>
+
+	<div class="btn clear">clear Donations</div>
+	
+
+	<script src="./assets/js/index.js"></script>
+</body>
+</html>
